@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="./style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     </head>
     <body>
         <div id="wrapper">
@@ -19,17 +18,18 @@
                     <!-- <p> -->
 
                     <!-- </p> -->
-                    <h1><span> Welcome! </span></h1>
-                    <h1>
-                        This system will help you prepare for job interviews by simulating a virtual interview
-                        experience. Press the button below to start your interview.
-                    </h1>
 
-                    <button class="btn" onclick="startInterview()">Start Interview</button>
+                    <h1>
+                        I am your Ai Assistant, which will help you prepare for job interviews by simulating a virtual
+                        interview experience.
+                    </h1>
+                    <p><span> Press the button below to start your interview. </span></p>
+
+                    <button class="btn" style="margin-top: 140px" onclick="startInterview()">Start Interview</button>
                 </div>
 
                 <div id="right">
-                    <button class="btn" id="startButton">Start Recording</button>
+                    <button class="btn" id="startButton" onclick="audio()">Start Recording</button>
 
                     <video id="videoElement" width="540" height="480" autoplay></video>
                 </div>
@@ -38,5 +38,6 @@
 
         <div id="interview-area"></div>
     </body>
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </html>

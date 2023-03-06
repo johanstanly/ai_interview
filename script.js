@@ -1,4 +1,28 @@
+function audio() {
+    navigator.mediaDevices
+        .getUserMedia({ video: true, audio: true }) // add audio property
+        .then(function (stream) {
+            var video = document.getElementById('videoElement')
+            video.srcObject = stream
+            video.play()
+        })
+        .catch(function (err) {
+            console.log('Error: ' + err.message)
+        })
+}
+
 function startInterview() {
+    navigator.mediaDevices
+        .getUserMedia({ video: true })
+        .then(function (stream) {
+            var video = document.getElementById('videoElement')
+            video.srcObject = stream
+            video.play()
+        })
+        .catch(function (err) {
+            console.log('Error: ' + err.message)
+        })
+
     // Create an array of questions
     var questions = [
         'Q: Tell me about yourself.',

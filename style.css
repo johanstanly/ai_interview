@@ -22,14 +22,15 @@ button {
   }
 #interview-area {
     background-color: rgb(219, 219, 219);
-    padding: 1em;
-    margin: 1em;
+    padding: 3em;
+
     width: 96%;
     height:20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 3em;
     
   }
 #main{
@@ -38,8 +39,9 @@ button {
     
 }
 
-main.btn{
-    margin-top: ;
+lfbtn{
+    margin-top: 50px; 
+
 }
 
 
